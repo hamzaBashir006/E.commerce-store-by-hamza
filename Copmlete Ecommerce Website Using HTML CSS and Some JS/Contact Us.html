@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>IES WORLD Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<style>
+*{	
+	margin:0px;
+	padding:0px;
+}
+body{
+		background:#55ffe5;
+		font-size:14px;
+		font-family: 'Poppins', sans-serif;
+		
+}
+.container{
+			width:80%;
+			margin:20px auto;
+}
+.contactBox{
+			background:#fff;
+			display:flex;
+}
+.contactLeft{
+			flex-basis:60%;
+			padding:40px 60px;
+}
+.contactRight{
+			flex-basis:40%;
+			padding:40px;
+			background:#1c00b5;
+			color:#fff;
+}
+h1{
+			margin-bottom:10px;
+}
+p{
+			margin-bottom:40px;
+}
+.inputRow{
+			display:flex;
+			justify-content:space-between;
+			margin-bottom:20px;
+}
+.inputRow .inputGroup{
+			flex-basis:45%;
+}
+input{
+			width:100%;
+			border:none;
+			border-bottom:1px solid #ccc;
+			outline:none;
+			padding-bottom:5px;
+}
+textarea{
+			width:100%;
+			border:1px solid #ccc;
+			outline:none;
+			padding:10px;
+			box-sizing:border-box;
+}
+label{
+			margin-bottom: 5px;
+			display:block;
+			color:#1c0fb5;
+			
+}
+button{
+			width:100px;
+			border:none;
+			background:#1c00b5;
+			color:#fff;
+			outline:none;
+			height:35px;
+			margin-top:20px;
+			border-radius:35px;
+			box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contactLeft h3{
+			
+			color:1c00b5;
+			font-weight:bold;
+			margin-bottom:30px;
+}
+.contactRight h3{
+			
+			//color:1c00b5;
+			font-weight:bold;
+			margin-bottom:30px;
+}
+tr td:first-child{
+			padding-right:20px;
+}
+
+tr td{
+			padding-top:20px;
+			color:rgba(255,255,255,0.8);
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+<h1>Contact With Us:</h1>
+<p>We would like to respond to your queries. <br/>Feel free to contact with us.</p>
+
+	<div class="contactBox">
+		<div class="contactLeft">
+			<h3>Please Sent Request</h3>
+			<form>
+				
+				<div class="inputRow">
+					
+					<div class="inputGroup">
+						<label>Name</label>
+						<input type="text" placeholder="Muzammil Khan">
+					</div>
+					
+					<div class="inputGroup">
+						<label>Phone</label>
+						<input type="text" placeholder="+92 306-6880794">
+					</div>
+				</div>
+				
+				<div class="inputRow">
+					
+					<div class="inputGroup">
+						<label>Email</label>
+						<input type="email" placeholder="muzammil2762@gmail.com">
+					</div>
+					
+					<div class="inputGroup">
+						<label>Subject</label>
+						<input type="text" placeholder="Demo">
+					</div>
+				</div>
+				<label>Messge</label>
+				<textarea rows="5" placeholder="Your Message"></textarea>
+				
+				<button type="submit">Send</button>
+			</form>
+		</div>
+		
+		<div class="contactRight">
+			<h3>Reach Us</h3>
+				<table>
+					<tr>
+						<td>Email:</td>
+						<td>muzammil2762@gmail.com</td>
+					</tr>
+					
+					<tr>
+						<td>Phone:</td>
+						<td>03066880794</td>
+					</tr>
+					
+					<tr>
+						<td>Address:</td>
+						<td>ILam Deen Colony Street No: 08
+						Tulamba Road Mian Channu</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

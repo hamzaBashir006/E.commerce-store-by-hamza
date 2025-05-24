@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Products - Muzammil Online Store</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!--font-awesome-->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--rating-->
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="main.html"><img src="pic/logo.png" alt="" width="125px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems"> <!--call in Js-->
+					<li><a href="main.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="Contact Us.html">Contact</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="account.html">Account</a></li>
+				</ul>
+			</nav>
+			<img src="pic/cart.png" alt="" width="30px" height="30px">
+			<!-- For Responsive-->
+			<img src="pic/menu.png" class="menu-icon" onclick="menutoggle()">
+			<!--when Decrease page width-->
+		</div>
+	</div>
+
+<!--------------Cart Items Details------------->
+
+	<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="pic/buy-1.jpg">
+						<div>
+							<p>Red Printed Shirt</p>
+							<small>Price: $60.00</small>
+							<br/>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$60.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="pic/buy-2.jpg">
+						<div>
+							<p>Black Shoes with Sleeves</p>
+							<small>Price: $150.00</small>
+							<br/>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$150.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="pic/buy-3.jpg">
+						<div>
+							<p>Trouser Light-Black</p>
+							<small>Price: $40.50</small>
+							<br/>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$40.50</td>
+			</tr>
+		</table>
+		
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>$350.50</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>$30.00</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$380.50</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+	</div>
+	
+<!--------------fotter------------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Androif & IOS Phone</p>
+					<div class="app-logo">
+						<img src="pic/play-store.png">
+						<img src="pic/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="pic/logo-white.png">
+					<p>Our purpose is to make the pleasure and benefits of sports accessible to the many</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliates</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twiter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr/>
+			<p class="copyright">Copyright 2023 - Muzammil Khan</p>
+		</div>
+	</div>
+	
+<!-------------- Javascript for Toggle Menu------------->	
+
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+			else{
+					MenuItems.style.maxHeight = "0px";
+			}
+			
+		}
+	</script>
+	
+
+</body>
+</html>
